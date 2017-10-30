@@ -4,6 +4,6 @@ before_install:
   - docker run --rm -i lukasmartinelli/hadolint hadolint --ignore DL4000 --ignore DL3008 - < Dockerfile
 install:
   - docker build -t maldet .
-  - docker run -ti --name maldet maldet -u
+  - docker run -d --name maldet maldet -u
 #script:
 #  - docker ps | grep -q maldet 
