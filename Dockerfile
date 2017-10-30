@@ -3,7 +3,7 @@ LABEL maintainer="Yorick Poels <yorick.poels@gmail.com>"
 
 ENV VERSION=1.6.2
 
-RUN apk add --no-cache wget tar bash perl  &&\
+RUN apk add --no-cache wget tar bash perl su-exec  &&\
     rm -rf /var/cache/apk/*
 
 WORKDIR /tmp
@@ -16,6 +16,6 @@ RUN bash -x install.sh
 
 COPY ./files/internals/internals.conf /usr/local/maldetect/internals/internals.conf    
 
-RUN /usr/local/maldetect/maldet -u
+RUN su-exec /usr/local/maldetect/maldet -u
 
-ENTRYPOINT ["/usr/local/maldetect/maldet"]
+ENTRYPOINT ["su-exec /usr/local/maldetect/maldet"]
