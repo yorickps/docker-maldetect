@@ -1,5 +1,5 @@
 FROM alpine:3.6
-LABEL maintainer="Yorick Poels <yorick.poels@gmail.com>"
+LABEL maintainer="Yorick Poels"
 
 ENV VERSION=1.6.2
 
