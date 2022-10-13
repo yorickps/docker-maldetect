@@ -1,7 +1,7 @@
 # Docker maldetect
 
 [![Docker Automated build](https://img.shields.io/docker/automated/yorickps/maldetect.svg)](https://hub.docker.com/r/yorickps/maldetect/builds/)
-[![Actions Status](https://github.com/yorickps/workflows/Build%20and%20Test/badge.svg)](https://github.com/yorickps/docker-maldetect/actions)
+[![Actions Status](https://github.com/yorickps/workflows/ci/badge.svg)](https://github.com/yorickps/docker-maldetect/actions)
 
 Docker image to run [maldetect](https://www.rfxn.com/projects/linux-malware-detect/)
 
