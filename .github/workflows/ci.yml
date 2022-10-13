@@ -23,7 +23,7 @@ jobs:
           load: true      
           tags: ${{ env.TEST_TAG }}
     - name: Test
-      run: docker run --rm ${{ env.TEST_TAG }}
+      run: docker run --rm ${{ env.TEST_TAG }} maldet
 
 # before_install:
 #   - docker run --rm -i lukasmartinelli/hadolint hadolint --ignore DL4000 --ignore DL3008 - < Dockerfile
